@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Page</title>
+    <link rel="stylesheet" href="searchpage.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <main class="main-content">
+        <div class="profile-section">
+          <div class="profile-card">
+            <img src="Photos/simon.jpg" alt="Profile" class="profile-img" />
+            <div class="profile-info">
+              <h2>Bishow Raj C.</h2>
+              <p class="location">Biratnagar, Nepal</p>
+              <div class="rating">
+                <span class="stars">★★★</span>
+                <span class="count">(200)</span>
+              </div>
+              <p class="institution">TU, Bsc.csit</p>
+            </div>
+            <div>
+              <button class="follow-btn" onclick="toggleFollow(this)">Follow</button>
+              <p class="followers" >250 followers</p>
+            </div>
+          </div>
+          <div class="profile-section">
+            <div class="profile-card">
+              <img src="Photos/simon.jpg" alt="Profile" class="profile-img" />
+              <div class="profile-info">
+                <h2>Gaurav Raj Bana</h2>
+                <p class="location">Biratnagar, Nepal</p>
+                <div class="rating">
+                  <span class="stars">★★★★</span>
+                  <span class="count">(574)</span>
+                </div>
+                <p class="institution">TU, Bsc.csit</p>
+              </div>
+              <div>
+                <button class="follow-btn" onclick="toggleFollow(this)">Follow</button>
+                <p class="followers" >200 followers</p>
+              </div>
+            </div>
+            <div class="profile-section">
+                <div class="profile-card">
+                  <img src="Photos/simon.jpg" alt="Profile" class="profile-img" />
+                  <div class="profile-info">
+                    <h2>Dip Ojha</h2>
+                    <p class="location">Biratnagar, Nepal</p>
+                    <div class="rating">
+                      <span class="stars">★★</span>
+                      <span class="count">(33)</span>
+                    </div>
+                    <p class="institution">TU, Bsc.csit</p>
+                  </div>
+                  <div>
+                  <button class="follow-btn" onclick="toggleFollow(this)">Follow</button>
+                  <p class="followers" >250 followers</p>
+                </div>
+                </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+            <script>
+              function toggleFollow(button) {
+                const buttons = document.querySelectorAll('.follow-btn');
+                buttons.forEach(b => {
+                  b.textContent = b === button ? (b.textContent === 'Follow' ? 'Following' : 'Follow') : b.textContent;
+                  b.style.color = b === button ? (b.textContent === 'Following' ? '#37b215' : 'white') : b.style.color;
+                  b.style.backgroundColor = b === button ? (b.textContent === 'Following' ? '#f6fcf4' : '#37b215') : b.style.backgroundColor;
+                });
+              }
+            </script>
