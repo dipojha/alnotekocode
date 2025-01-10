@@ -1,0 +1,205 @@
+@import "./styles.css";
+
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+.sidebar {
+  width: 240px;
+  background: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  padding: 20px 0;
+}
+
+.logo {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.logo-img {
+  width: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #495057;
+  transition: background-color 0.2s;
+}
+
+.nav-links li:hover,
+.nav-links li.active {
+  background-color: #e9ecef;
+  color: #212529;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background: #e9ecef;
+}
+
+.profile-section {
+  margin-top: 30px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0 0 5px 0;
+  color: #212529;
+}
+
+.location {
+  color: #6c757d;
+  margin: 0 0 5px 0;
+}
+
+.rating {
+  color: #ffc107;
+  margin: 5px 0;
+}
+
+.rating .count {
+  color: #37b215;
+  margin-left: 5px;
+}
+
+.institution {
+  color: #495057;
+  margin: 5px 0 0 0;
+}
+
+.follow-btn {
+  padding: 8px 0;
+  background: #37b215;
+  width: 94.56px;
+  height: 36px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid #dadce0;
+}
+
+.follow-btn:hover {
+  background: #218838;
+}
+
+.profile-card .followers {
+  color: #6c757d;
+  font-size: 11px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.content-card {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.content-img {
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 15px solid #dadce0;
+}
+
+.content-img img {
+  width: 100%;
+  height: auto;
+}
+
+.content-info {
+  flex: 1;
+}
+
+.content-info h3 {
+  margin: 0 0 10px 0;
+  color: #212529;
+}
+
+.content-meta {
+  color: #37b215;
+  margin-bottom: 10px;
+}
+
+.content-meta span {
+  margin-right: 15px;
+}
+
+.content-description {
+  color: #495057;
+  margin: 0;
+  line-height: 1.5;
+}
